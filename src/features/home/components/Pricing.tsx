@@ -1,4 +1,4 @@
-import { Button }          from '@/components/ui/Button'
+﻿import { Button }          from '@/components/ui/Button'
 import { Reveal }          from '@/components/ui/Reveal'
 import type { Dictionary } from '@/i18n/types'
 
@@ -33,7 +33,7 @@ export function Pricing({ dict }: PricingProps) {
       {/* Centered mint glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
                       w-[900px] h-[560px] rounded-full pointer-events-none"
-           style={{ background: 'radial-gradient(ellipse, rgba(5,150,105,0.07) 0%, transparent 65%)' }} />
+           style={{ background: 'radial-gradient(ellipse, rgba(108,92,231,0.07) 0%, transparent 65%)' }} />
 
       <div className="max-w-[1200px] mx-auto px-6 relative z-10">
 
@@ -42,7 +42,7 @@ export function Pricing({ dict }: PricingProps) {
           <div className="text-center mb-16">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-6
                             bg-mint/8 border border-mint/25
-                            shadow-[0_2px_12px_rgba(5,150,105,0.08)]">
+                            shadow-[0_2px_12px_rgba(108,92,231,0.08)]">
               <svg className="w-3.5 h-3.5 text-mint flex-shrink-0" fill="none"
                    viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
                 <path strokeLinecap="round" strokeLinejoin="round"
@@ -71,7 +71,7 @@ export function Pricing({ dict }: PricingProps) {
               <span className="inline-flex items-center gap-2 bg-mint text-white
                                text-[0.72rem] font-bold uppercase tracking-[0.12em]
                                px-5 py-2 rounded-full
-                               shadow-[0_4px_20px_rgba(5,150,105,0.40)]">
+                               shadow-[0_4px_20px_rgba(108,92,231,0.40)]">
                 <span className="w-1.5 h-1.5 rounded-full bg-white/60 animate-pulse" />
                 {dict.offerBadge}
               </span>

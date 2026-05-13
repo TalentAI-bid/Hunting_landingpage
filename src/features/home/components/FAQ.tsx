@@ -1,4 +1,4 @@
-'use client'
+﻿'use client'
 
 import { useState }        from 'react'
 import { Reveal }          from '@/components/ui/Reveal'
@@ -44,7 +44,7 @@ function FAQRow({ question, answer, index, total, defaultOpen = false }: FAQRowP
                             flex-shrink-0 text-[0.67rem] font-bold tabular-nums
                             transition-all duration-250
                             ${open
-                              ? 'bg-mint text-white shadow-[0_2px_10px_rgba(5,150,105,0.35)]'
+                              ? 'bg-mint text-white shadow-[0_2px_10px_rgba(108,92,231,0.35)]'
                               : 'bg-elevated border border-edge text-dim/60 group-hover:border-mint/30'}`}>
             {String(index + 1).padStart(2, '0')}
           </span>
@@ -90,7 +90,7 @@ export function FAQ({ dict }: FAQProps) {
 
       {/* Ambient orb */}
       <div className="absolute bottom-0 right-0 w-[500px] h-[500px] rounded-full pointer-events-none"
-           style={{ background: 'radial-gradient(circle, rgba(5,150,105,0.04) 0%, transparent 65%)' }} />
+           style={{ background: 'radial-gradient(circle, rgba(108,92,231,0.04) 0%, transparent 65%)' }} />
 
       <div className="max-w-[1200px] mx-auto px-6 relative z-10">
 
@@ -99,7 +99,7 @@ export function FAQ({ dict }: FAQProps) {
           <div className="mb-14 text-center flex flex-col items-center">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-6
                             bg-mint/8 border border-mint/25
-                            shadow-[0_2px_12px_rgba(5,150,105,0.08)]">
+                            shadow-[0_2px_12px_rgba(108,92,231,0.08)]">
               <svg className="w-3.5 h-3.5 text-mint flex-shrink-0" fill="none"
                    viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
                 <path strokeLinecap="round" strokeLinejoin="round"

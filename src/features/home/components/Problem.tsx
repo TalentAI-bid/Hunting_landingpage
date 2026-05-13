@@ -1,6 +1,24 @@
+import type { ReactNode }  from 'react'
 import { Reveal }          from '@/components/ui/Reveal'
 import { CountUp }         from '@/components/ui/CountUp'
 import type { Dictionary } from '@/i18n/types'
+
+const ICONS: Record<string, ReactNode> = {
+  clock: (
+    <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24"
+         stroke="currentColor" strokeWidth={1.75}>
+      <path strokeLinecap="round" strokeLinejoin="round"
+            d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0z" />
+    </svg>
+  ),
+  cost: (
+    <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24"
+         stroke="currentColor" strokeWidth={1.75}>
+      <path strokeLinecap="round" strokeLinejoin="round"
+            d="M2.25 18.75a60.07 60.07 0 0 1 15.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 0 1 3 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 0 0-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 0 1-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 0 0 3 15h-.75M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm3 0h.008v.008H18V10.5Zm-12 0h.008v.008H6V10.5Z" />
+    </svg>
+  ),
+}
 
 interface ProblemProps {
   dict: Dictionary['problem']
@@ -85,11 +103,11 @@ export function Problem({ dict }: ProblemProps) {
                 {/* Icon + stat row */}
                 <div className="relative z-10 flex items-center gap-5 mb-7">
                   <div className="w-12 h-12 rounded-[13px] flex-shrink-0
-                                  bg-amber/10 border border-amber/25
-                                  flex items-center justify-center text-[1.3rem]
+                                  bg-amber/10 border border-amber/25 text-amber
+                                  flex items-center justify-center
                                   group-hover:bg-amber/16 group-hover:border-amber/40
                                   transition-colors duration-300">
-                    {item.icon}
+                    {ICONS[item.icon] ?? item.icon}
                   </div>
 
                   <div className="font-display font-bold leading-none

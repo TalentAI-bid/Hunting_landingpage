@@ -1,4 +1,4 @@
-'use client'
+﻿'use client'
 
 import Link               from 'next/link'
 import { useTranslation } from 'react-i18next'
@@ -254,7 +254,7 @@ function RenderBlock({ block, idx }: { block: Block; idx: number }) {
             return <>{before}<Link href={block.linkHref!}
               {...(block.linkHref!.startsWith('http') ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
               className="font-medium underline underline-offset-2 transition-colors duration-200"
-              style={{ color: '#059669' }}>{block.linkLabel}</Link>{after}</>
+              style={{ color: '#6C5CE7' }}>{block.linkLabel}</Link>{after}</>
           })()
         : block.text}
     </p>
@@ -265,7 +265,7 @@ function RenderBlock({ block, idx }: { block: Block; idx: number }) {
         <li key={i} className="flex gap-3 text-[0.925rem] leading-[1.8]"
             style={{ color: '#4A5568' }}>
           <span className="mt-[0.55em] w-[5px] h-[5px] rounded-full flex-shrink-0"
-                style={{ background: 'rgba(5,150,105,0.55)' }} />
+                style={{ background: 'rgba(108,92,231,0.55)' }} />
           <span>
             {item.bold && (
               <strong className="font-semibold" style={{ color: '#1E293B' }}>
@@ -296,7 +296,7 @@ export default function LegalPage() {
         <div className="max-w-[860px] mx-auto px-6 py-14">
           <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full mb-5
                            text-[0.72rem] font-bold uppercase tracking-[0.11em]"
-                style={{ color: '#059669', background: 'rgba(5,150,105,0.10)', border: '1px solid rgba(5,150,105,0.22)' }}>
+                style={{ color: '#6C5CE7', background: 'rgba(108,92,231,0.10)', border: '1px solid rgba(108,92,231,0.22)' }}>
             <svg className="w-3 h-3 flex-shrink-0" fill="none" viewBox="0 0 24 24"
                  stroke="currentColor" strokeWidth="2.5">
               <path strokeLinecap="round" strokeLinejoin="round"
@@ -325,10 +325,10 @@ export default function LegalPage() {
               {/* Section header */}
               <div className="flex items-center gap-4 px-6 py-5"
                    style={{ borderBottom: '1px solid rgba(0,0,0,0.06)',
-                            background: 'linear-gradient(90deg, rgba(5,150,105,0.04) 0%, transparent 60%)' }}>
+                            background: 'linear-gradient(90deg, rgba(108,92,231,0.04) 0%, transparent 60%)' }}>
                 <span className="flex-shrink-0 w-7 h-7 rounded-lg flex items-center justify-center
                                  font-display font-bold text-[0.70rem]"
-                      style={{ background: 'rgba(5,150,105,0.10)', border: '1px solid rgba(5,150,105,0.18)', color: '#059669' }}>
+                      style={{ background: 'rgba(108,92,231,0.10)', border: '1px solid rgba(108,92,231,0.18)', color: '#6C5CE7' }}>
                   {String(si + 1).padStart(2, '0')}
                 </span>
                 <h2 className="font-display font-semibold text-[1.05rem] tracking-[-0.02em]"
@@ -349,8 +349,8 @@ export default function LegalPage() {
 
         {/* Cross-link */}
         <div className="mt-6 flex items-center gap-4 px-5 py-4 rounded-2xl"
-             style={{ background: 'rgba(5,150,105,0.07)', border: '1px solid rgba(5,150,105,0.18)' }}>
-          <svg className="w-5 h-5 flex-shrink-0" style={{ color: '#059669' }}
+             style={{ background: 'rgba(108,92,231,0.07)', border: '1px solid rgba(108,92,231,0.18)' }}>
+          <svg className="w-5 h-5 flex-shrink-0" style={{ color: '#6C5CE7' }}
                fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
             <path strokeLinecap="round" strokeLinejoin="round"
                   d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
@@ -359,7 +359,7 @@ export default function LegalPage() {
             {c.crossLabel}{' '}
             <Link href="/imprint"
                   className="font-medium underline underline-offset-2 transition-colors duration-200"
-                  style={{ color: '#059669' }}>
+                  style={{ color: '#6C5CE7' }}>
               {c.crossLink}
             </Link>.
           </p>

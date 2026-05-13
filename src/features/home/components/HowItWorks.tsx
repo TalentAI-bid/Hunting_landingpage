@@ -1,4 +1,4 @@
-import { Reveal }          from '@/components/ui/Reveal'
+﻿import { Reveal }          from '@/components/ui/Reveal'
 import type { Dictionary } from '@/i18n/types'
 import { ReactNode }        from 'react'
 
@@ -69,10 +69,10 @@ export function HowItWorks({ dict }: HowItWorksProps) {
       {/* Mint ambient orb */}
       <div className="absolute -top-56 -left-40 w-[700px] h-[700px] rounded-full
                       pointer-events-none"
-           style={{ background: 'radial-gradient(circle, rgba(5,150,105,0.05) 0%, transparent 65%)' }} />
+           style={{ background: 'radial-gradient(circle, rgba(108,92,231,0.05) 0%, transparent 65%)' }} />
       <div className="absolute bottom-0 right-0 w-[500px] h-[500px] rounded-full
                       pointer-events-none"
-           style={{ background: 'radial-gradient(circle, rgba(5,150,105,0.04) 0%, transparent 65%)' }} />
+           style={{ background: 'radial-gradient(circle, rgba(108,92,231,0.04) 0%, transparent 65%)' }} />
 
       <div className="max-w-[1200px] mx-auto px-6 relative z-10">
 
@@ -81,7 +81,7 @@ export function HowItWorks({ dict }: HowItWorksProps) {
           <div className="mb-16 max-w-[640px] mx-auto text-center">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-6
                             bg-mint/8 border border-mint/25
-                            shadow-[0_2px_12px_rgba(5,150,105,0.08)]">
+                            shadow-[0_2px_12px_rgba(108,92,231,0.08)]">
               <span className="w-2 h-2 rounded-full bg-mint animate-pulse flex-shrink-0" />
               <span className="text-mint text-[0.8rem] font-semibold tracking-wide">
                 {dict.eyebrow}
@@ -105,7 +105,7 @@ export function HowItWorks({ dict }: HowItWorksProps) {
           <div className="absolute hidden lg:block top-7 left-7 w-[2px]"
                style={{
                  bottom:     '28px',
-                 background: 'linear-gradient(to bottom, rgba(5,150,105,0.40) 0%, rgba(5,150,105,0.14) 75%, transparent 100%)',
+                 background: 'linear-gradient(to bottom, rgba(108,92,231,0.40) 0%, rgba(108,92,231,0.14) 75%, transparent 100%)',
                }} />
 
           <div className="space-y-4">
@@ -119,8 +119,8 @@ export function HowItWorks({ dict }: HowItWorksProps) {
                       className={`w-14 h-14 rounded-full relative z-10 flex items-center justify-center
                                   transition-all duration-300
                                   ${i === last
-                                    ? 'bg-gradient-to-br from-mint to-mint-dark border-2 border-mint/30 shadow-[0_0_0_4px_#F6F8FA,0_4px_16px_rgba(5,150,105,0.28)]'
-                                    : 'bg-elevated border-2 border-edge shadow-[0_0_0_4px_#F6F8FA] group-hover:border-mint/50 group-hover:bg-white group-hover:shadow-[0_0_0_4px_#F6F8FA,0_4px_16px_rgba(5,150,105,0.10)]'
+                                    ? 'bg-gradient-to-br from-mint to-mint-dark border-2 border-mint/30 shadow-[0_0_0_4px_#F6F8FA,0_4px_16px_rgba(108,92,231,0.28)]'
+                                    : 'bg-elevated border-2 border-edge shadow-[0_0_0_4px_#F6F8FA] group-hover:border-mint/50 group-hover:bg-white group-hover:shadow-[0_0_0_4px_#F6F8FA,0_4px_16px_rgba(108,92,231,0.10)]'
                                   }`}>
                       <span
                         className={`font-display font-bold text-[0.78rem] leading-none
@@ -134,7 +134,7 @@ export function HowItWorks({ dict }: HowItWorksProps) {
                   <div className="flex-1 bg-panel border border-edge rounded-[18px] p-7
                                   overflow-hidden transition-all duration-300
                                   hover:border-mint/25 hover:-translate-y-0.5
-                                  hover:shadow-[0_16px_48px_rgba(5,150,105,0.08),0_2px_8px_rgba(0,0,0,0.04)]
+                                  hover:shadow-[0_16px_48px_rgba(108,92,231,0.08),0_2px_8px_rgba(0,0,0,0.04)]
                                   relative group/card">
 
                     {/* Hover fill */}

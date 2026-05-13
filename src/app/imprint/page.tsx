@@ -1,4 +1,4 @@
-'use client'
+﻿'use client'
 
 import Link               from 'next/link'
 import { useTranslation } from 'react-i18next'
@@ -125,7 +125,7 @@ export default function ImprintPage() {
         <div className="max-w-[860px] mx-auto px-6 py-14">
           <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full mb-5
                            text-[0.72rem] font-bold uppercase tracking-[0.11em]"
-                style={{ color: '#059669', background: 'rgba(5,150,105,0.10)', border: '1px solid rgba(5,150,105,0.22)' }}>
+                style={{ color: '#6C5CE7', background: 'rgba(108,92,231,0.10)', border: '1px solid rgba(108,92,231,0.22)' }}>
             <svg className="w-3 h-3 flex-shrink-0" fill="none" viewBox="0 0 24 24"
                  stroke="currentColor" strokeWidth="2.5">
               <path strokeLinecap="round" strokeLinejoin="round"
@@ -150,7 +150,7 @@ export default function ImprintPage() {
         {c.tables.map((sec) => (
           <section key={sec.heading}>
             <div className="flex items-center gap-3 mb-3">
-              <div className="w-1 h-5 rounded-full" style={{ background: 'linear-gradient(180deg, #059669, rgba(5,150,105,0.3))' }} />
+              <div className="w-1 h-5 rounded-full" style={{ background: 'linear-gradient(180deg, #6C5CE7, rgba(108,92,231,0.3))' }} />
               <h2 className="font-display font-semibold text-[1.05rem] tracking-[-0.02em]"
                   style={{ color: '#0F172A' }}>
                 {sec.heading}
@@ -176,10 +176,10 @@ export default function ImprintPage() {
                       <a href={row.href}
                          className="inline-flex items-center gap-2 px-4 py-2 rounded-[10px]
                                     text-[0.82rem] font-semibold transition-all duration-200
-                                    shadow-[0_2px_10px_rgba(5,150,105,0.18)]
-                                    hover:shadow-[0_4px_20px_rgba(5,150,105,0.30)]
+                                    shadow-[0_2px_10px_rgba(108,92,231,0.18)]
+                                    hover:shadow-[0_4px_20px_rgba(108,92,231,0.30)]
                                     hover:-translate-y-px"
-                         style={{ background: 'linear-gradient(135deg,#059669 0%,#047857 100%)', color: '#fff' }}>
+                         style={{ background: 'linear-gradient(135deg,#6C5CE7 0%,#5A4DCF 100%)', color: '#fff' }}>
                         <svg className="w-3.5 h-3.5 flex-shrink-0" fill="none"
                              viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
                           <path strokeLinecap="round" strokeLinejoin="round"
@@ -192,14 +192,14 @@ export default function ImprintPage() {
                          target={row.href.startsWith('http') ? '_blank' : undefined}
                          rel={row.href.startsWith('http') ? 'noopener noreferrer' : undefined}
                          className="font-medium underline underline-offset-2 transition-colors duration-200"
-                         style={{ color: '#059669' }}>
+                         style={{ color: '#6C5CE7' }}>
                         {row.value}
                       </a>
                     ) : row.linkLabel ? (() => {
                       const [before, after] = row.value.split(row.linkLabel!)
                       return <>{before}<a href={row.linkHref} target="_blank" rel="noopener noreferrer"
                                className="font-medium underline underline-offset-2 transition-colors duration-200"
-                               style={{ color: '#059669' }}>{row.linkLabel}</a>{after}</>
+                               style={{ color: '#6C5CE7' }}>{row.linkLabel}</a>{after}</>
                     })() : row.value}
                   </span>
                 </div>
@@ -211,7 +211,7 @@ export default function ImprintPage() {
         {/* Prose sections */}
         <section>
           <div className="flex items-center gap-3 mb-3">
-            <div className="w-1 h-5 rounded-full" style={{ background: 'linear-gradient(180deg, #059669, rgba(5,150,105,0.3))' }} />
+            <div className="w-1 h-5 rounded-full" style={{ background: 'linear-gradient(180deg, #6C5CE7, rgba(108,92,231,0.3))' }} />
             <h2 className="font-display font-semibold text-[1.05rem] tracking-[-0.02em]"
                 style={{ color: '#0F172A' }}>
               {c.additionalLabel}
@@ -234,7 +234,7 @@ export default function ImprintPage() {
                     return <>{before}<Link href={sec.linkHref!}
                       {...(sec.linkHref!.startsWith('http') ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
                       className="font-medium underline underline-offset-2 transition-colors duration-200"
-                      style={{ color: '#059669' }}>{sec.linkLabel}</Link>{after}</>
+                      style={{ color: '#6C5CE7' }}>{sec.linkLabel}</Link>{after}</>
                   })() : sec.text}
                 </p>
               </div>
@@ -244,8 +244,8 @@ export default function ImprintPage() {
 
         {/* Cross-link */}
         <div className="flex items-center gap-4 px-5 py-4 rounded-2xl"
-             style={{ background: 'rgba(5,150,105,0.07)', border: '1px solid rgba(5,150,105,0.18)' }}>
-          <svg className="w-5 h-5 flex-shrink-0" style={{ color: '#059669' }}
+             style={{ background: 'rgba(108,92,231,0.07)', border: '1px solid rgba(108,92,231,0.18)' }}>
+          <svg className="w-5 h-5 flex-shrink-0" style={{ color: '#6C5CE7' }}
                fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
             <path strokeLinecap="round" strokeLinejoin="round"
                   d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
@@ -254,7 +254,7 @@ export default function ImprintPage() {
             {c.crossLabel}{' '}
             <Link href="/legal"
                   className="font-medium underline underline-offset-2 transition-colors duration-200"
-                  style={{ color: '#059669' }}>
+                  style={{ color: '#6C5CE7' }}>
               {c.crossLink}
             </Link>.
           </p>

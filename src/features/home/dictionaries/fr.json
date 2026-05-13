@@ -27,13 +27,13 @@
     "lead": "Les méthodes classiques ont été pensées avant le travail à distance généralisé, avant la génération de CV par IA, avant que la vérification d'identité en direct ne devienne possible. Ces deux problèmes, nous les entendons chaque semaine de la part des fondateurs.",
     "items": [
       {
-        "icon": "⚠",
+        "icon": "clock",
         "stat": "42+",
         "title": "jours en moyenne pour pourvoir un poste tech senior",
         "desc": "Moyenne sectorielle. Chaque poste ouvert coûte environ 500 $ par jour de productivité perdue. Deux mois d'attente, c'est 30 000 $ qui s'évaporent avant la signature."
       },
       {
-        "icon": "💸",
+        "icon": "cost",
         "stat": "20-30%",
         "title": "d'honoraires demandés par les cabinets classiques",
         "desc": "Auxquels s'ajoutent forfait d'ouverture, frais d'entretien et clause d'exclusivité. Sur un recrutement à 80 000 €, la facture grimpe à 18 000–25 000 €."

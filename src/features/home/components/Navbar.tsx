@@ -1,9 +1,10 @@
-'use client'
+﻿'use client'
 
 import { useState, useEffect }  from 'react'
 import Link                      from 'next/link'
 import { usePathname }           from 'next/navigation'
 import { useTranslation }        from 'react-i18next'
+import Image                      from 'next/image'
 import { Button }                from '@/components/ui/Button'
 import type { Dictionary, Locale }       from '@/i18n/types'
 
@@ -59,28 +60,10 @@ export function Navbar() {
       <div className="max-w-[1200px] mx-auto px-6 py-[13px] flex items-center justify-between gap-6">
 
         {/* ── Logo ── */}
-        <Link href="/" aria-label="TalentAI Hire home" onClick={handleLogoClick}
-              className="flex items-center gap-2.5 group flex-shrink-0">
-          <div className="w-8 h-8 rounded-[9px] bg-gradient-to-br from-mint to-mint-dark
-                          flex items-center justify-center flex-shrink-0
-                          shadow-[0_2px_10px_rgba(5,150,105,0.32)]
-                          group-hover:shadow-[0_4px_18px_rgba(5,150,105,0.44)]
-                          transition-shadow duration-200">
-            <svg className="w-[17px] h-[17px] text-white" fill="none"
-                 viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
-              <path strokeLinecap="round" strokeLinejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
-            </svg>
-          </div>
-          <div className="flex items-baseline gap-2">
-            <span className="font-display font-bold text-[1.1rem] tracking-[-0.03em]
-                             text-body group-hover:text-mint transition-colors duration-200">
-              TalentAI
-            </span>
-            <span className="text-[0.68rem] font-bold uppercase tracking-[0.12em]
-                             text-mint bg-mint/8 border border-mint/25 rounded-md px-1.5 py-[3px]">
-              Hire
-            </span>
-          </div>
+        <Link href="/" aria-label="HuntingTalent.ai home" onClick={handleLogoClick}
+              className="flex-shrink-0 transition-transform duration-200 hover:scale-105">
+          <Image src="/logo-h.png" alt="HuntingTalent.ai" width={160} height={48}
+                 className="h-9 w-auto" priority />
         </Link>
 
         {/* ── Desktop nav links ── */}
@@ -107,7 +90,7 @@ export function Navbar() {
             <div
               className="absolute top-[3px] bottom-[3px] rounded-[7px] bg-white
                          border border-edge/80
-                         shadow-[0_1px_5px_rgba(0,0,0,0.09),0_0_0_1px_rgba(5,150,105,0.06)]
+                         shadow-[0_1px_5px_rgba(0,0,0,0.09),0_0_0_1px_rgba(108,92,231,0.06)]
                          transition-all duration-[230ms] ease-[cubic-bezier(0.34,1.56,0.64,1)]
                          pointer-events-none"
               style={{

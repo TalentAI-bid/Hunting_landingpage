@@ -1,4 +1,4 @@
-import { Button }  from '@/components/ui/Button'
+﻿import { Button }  from '@/components/ui/Button'
 import { Reveal }  from '@/components/ui/Reveal'
 import { CountUp } from '@/components/ui/CountUp'
 import type { Dictionary } from '@/i18n/types'
@@ -49,7 +49,7 @@ export function Hero({ dict }: HeroProps) {
             <Reveal>
               <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full
                               bg-mint/8 border border-mint/25 mb-8
-                              shadow-[0_2px_12px_rgba(5,150,105,0.10)]">
+                              shadow-[0_2px_12px_rgba(108,92,231,0.10)]">
                 <span className="relative flex h-2 w-2 flex-shrink-0">
                   <span className="animate-ping absolute inline-flex h-full w-full
                                    rounded-full bg-mint opacity-60" />

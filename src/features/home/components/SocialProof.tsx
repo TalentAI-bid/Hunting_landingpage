@@ -1,4 +1,4 @@
-import { Reveal }          from '@/components/ui/Reveal'
+﻿import { Reveal }          from '@/components/ui/Reveal'
 import type { Dictionary } from '@/i18n/types'
 
 interface SocialProofProps {
@@ -27,9 +27,9 @@ export function SocialProof({ dict }: SocialProofProps) {
 
       {/* Ambient orbs */}
       <div className="absolute -top-32 right-0 w-[560px] h-[560px] rounded-full pointer-events-none"
-           style={{ background: 'radial-gradient(circle, rgba(5,150,105,0.05) 0%, transparent 65%)' }} />
+           style={{ background: 'radial-gradient(circle, rgba(108,92,231,0.05) 0%, transparent 65%)' }} />
       <div className="absolute bottom-0 -left-20 w-[400px] h-[400px] rounded-full pointer-events-none"
-           style={{ background: 'radial-gradient(circle, rgba(5,150,105,0.04) 0%, transparent 65%)' }} />
+           style={{ background: 'radial-gradient(circle, rgba(108,92,231,0.04) 0%, transparent 65%)' }} />
 
       <div className="max-w-[1200px] mx-auto px-6 relative z-10">
 
@@ -38,7 +38,7 @@ export function SocialProof({ dict }: SocialProofProps) {
           <div className="mb-14 max-w-[640px] mx-auto text-center">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-6
                             bg-mint/8 border border-mint/25
-                            shadow-[0_2px_12px_rgba(5,150,105,0.08)]">
+                            shadow-[0_2px_12px_rgba(108,92,231,0.08)]">
               <svg className="w-3.5 h-3.5 text-mint flex-shrink-0" fill="none"
                    viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
                 <path strokeLinecap="round" strokeLinejoin="round"
@@ -83,7 +83,7 @@ export function SocialProof({ dict }: SocialProofProps) {
                                  bg-white border border-edge cursor-default
                                  shadow-[0_1px_3px_rgba(0,0,0,0.05)]
                                  hover:border-mint/30
-                                 hover:shadow-[0_4px_14px_rgba(5,150,105,0.08)]
+                                 hover:shadow-[0_4px_14px_rgba(108,92,231,0.08)]
                                  transition-all duration-200">
                   <span className="w-1.5 h-1.5 rounded-full bg-mint/60 flex-shrink-0" />
                   <span className="font-display font-semibold text-[0.87rem]
@@ -102,7 +102,7 @@ export function SocialProof({ dict }: SocialProofProps) {
           <div className="mt-5 relative bg-panel border border-edge rounded-[22px]
                           overflow-hidden transition-all duration-300 group
                           hover:-translate-y-1.5 hover:border-mint/25
-                          hover:shadow-[0_28px_72px_rgba(5,150,105,0.09),0_4px_16px_rgba(0,0,0,0.05)]">
+                          hover:shadow-[0_28px_72px_rgba(108,92,231,0.09),0_4px_16px_rgba(0,0,0,0.05)]">
 
             {/* Hover gradient fill */}
             <div className="absolute inset-0 bg-gradient-to-br from-mint/[0.03] to-transparent
@@ -143,7 +143,7 @@ export function SocialProof({ dict }: SocialProofProps) {
                                   bg-gradient-to-br from-mint to-mint-dark
                                   flex items-center justify-center
                                   text-white font-bold text-[0.95rem]
-                                  shadow-[0_4px_16px_rgba(5,150,105,0.30)]">
+                                  shadow-[0_4px_16px_rgba(108,92,231,0.30)]">
                     {dict.testimonial.authorInitials}
                   </div>
                   <div className="flex-1">

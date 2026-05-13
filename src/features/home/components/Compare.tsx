@@ -1,4 +1,4 @@
-import { Reveal }          from '@/components/ui/Reveal'
+﻿import { Reveal }          from '@/components/ui/Reveal'
 import type { Dictionary } from '@/i18n/types'
 import { ReactNode }        from 'react'
 
@@ -67,7 +67,7 @@ export function Compare({ dict }: CompareProps) {
 
       {/* Mint ambient */}
       <div className="absolute top-0 right-0 w-[500px] h-[500px] rounded-full pointer-events-none"
-           style={{ background: 'radial-gradient(circle, rgba(5,150,105,0.05) 0%, transparent 65%)' }} />
+           style={{ background: 'radial-gradient(circle, rgba(108,92,231,0.05) 0%, transparent 65%)' }} />
 
       <div className="max-w-[1200px] mx-auto px-6 relative z-10">
 
@@ -76,7 +76,7 @@ export function Compare({ dict }: CompareProps) {
           <div className="mb-14 max-w-[640px] mx-auto text-center">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-6
                             bg-mint/8 border border-mint/25
-                            shadow-[0_2px_12px_rgba(5,150,105,0.08)]">
+                            shadow-[0_2px_12px_rgba(108,92,231,0.08)]">
               <svg className="w-3.5 h-3.5 text-mint flex-shrink-0" fill="none"
                    viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
                 <path strokeLinecap="round" strokeLinejoin="round"

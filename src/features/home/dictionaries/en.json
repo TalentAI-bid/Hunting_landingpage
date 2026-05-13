@@ -27,13 +27,13 @@
     "lead": "The traditional recruitment playbook was written before remote-first, before AI résumés, before live identity verification became possible. These two problems are what we hear from founders every week.",
     "items": [
       {
-        "icon": "⚠",
+        "icon": "clock",
         "stat": "42+",
         "title": "days to fill a senior tech role",
         "desc": "Industry baseline. Each open role costs ~$500/day in lost productivity. Two months = $30K vanished before the candidate even signs."
       },
       {
-        "icon": "💸",
+        "icon": "cost",
         "stat": "20-30%",
         "title": "success-fee from manual agencies",
         "desc": "Plus setup fee upfront. Plus interview fees. Plus exclusivity clauses. On an €80K hire that stacks up to €18-25K, with zero AI verification."

@@ -1,4 +1,4 @@
-import { ReactNode } from 'react'
+﻿import { ReactNode } from 'react'
 
 type Variant = 'primary' | 'secondary' | 'mint'
 type Size    = 'md' | 'lg'
@@ -16,7 +16,7 @@ interface ButtonProps {
 
 const variants: Record<Variant, string> = {
   primary:
-    'bg-mint text-white font-bold shadow-[0_4px_16px_rgba(5,150,105,0.30)] hover:bg-mint-dark hover:-translate-y-0.5 hover:shadow-[0_8px_28px_rgba(5,150,105,0.40)] active:translate-y-0',
+    'bg-mint text-white font-bold shadow-[0_4px_16px_rgba(108,92,231,0.30)] hover:bg-mint-dark hover:-translate-y-0.5 hover:shadow-[0_8px_28px_rgba(108,92,231,0.40)] active:translate-y-0',
   secondary:
     'bg-white text-body border border-edge hover:bg-elevated hover:border-mint/50 hover:-translate-y-0.5 shadow-[0_1px_4px_rgba(0,0,0,0.06)]',
   mint:

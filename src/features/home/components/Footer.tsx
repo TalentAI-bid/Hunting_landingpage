@@ -1,6 +1,7 @@
-'use client'
+﻿'use client'
 
 import Link            from 'next/link'
+import Image           from 'next/image'
 import { usePathname } from 'next/navigation'
 import { linkedinUrl, linkedinLabel, calendlyUrl } from '@/config/site'
 import type { Dictionary } from '@/i18n/types'
@@ -21,17 +22,17 @@ export function Footer({ dict }: FooterProps) {
 
   return (
     <footer className="relative overflow-hidden"
-            style={{ background: 'linear-gradient(145deg, #0c1a14 0%, #081410 45%, #050e0a 100%)' }}>
+            style={{ background: 'linear-gradient(145deg, #0d0b1e 0%, #08061a 45%, #050414 100%)' }}>
 
       {/* Subtle ambient glow */}
       <div className="absolute -top-32 -left-32 w-[480px] h-[480px] rounded-full pointer-events-none"
-           style={{ background: 'radial-gradient(circle, rgba(16,185,129,0.08) 0%, transparent 65%)' }} />
+           style={{ background: 'radial-gradient(circle, rgba(139,127,240,0.08) 0%, transparent 65%)' }} />
       <div className="absolute -bottom-24 right-0 w-[360px] h-[360px] rounded-full pointer-events-none"
-           style={{ background: 'radial-gradient(circle, rgba(5,150,105,0.06) 0%, transparent 65%)' }} />
+           style={{ background: 'radial-gradient(circle, rgba(108,92,231,0.06) 0%, transparent 65%)' }} />
 
       {/* Top accent */}
       <div className="h-px w-full"
-           style={{ background: 'linear-gradient(90deg, transparent, rgba(16,185,129,0.6) 40%, rgba(52,211,153,1) 50%, rgba(16,185,129,0.6) 60%, transparent)' }} />
+           style={{ background: 'linear-gradient(90deg, transparent, rgba(139,127,240,0.6) 40%, rgba(167,139,250,1) 50%, rgba(139,127,240,0.6) 60%, transparent)' }} />
 
       <div className="relative z-10 max-w-[1200px] mx-auto px-6 pt-14 pb-10">
 
@@ -43,27 +44,9 @@ export function Footer({ dict }: FooterProps) {
           <div className="flex flex-col gap-5">
 
             <Link href="/" onClick={handleLogoClick}
-                  className="inline-flex items-center gap-2.5 group w-fit">
-              <div className="w-9 h-9 rounded-[10px] flex items-center justify-center flex-shrink-0
-                              shadow-[0_0_20px_rgba(16,185,129,0.4)]
-                              group-hover:shadow-[0_0_28px_rgba(52,211,153,0.55)]
-                              group-hover:scale-105 transition-all duration-300"
-                   style={{ background: 'linear-gradient(135deg, #10b981 0%, #059669 100%)' }}>
-                <svg className="w-[18px] h-[18px] text-white" fill="none"
-                     viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
-                </svg>
-              </div>
-              <div className="flex items-baseline gap-2">
-                <span className="font-display font-bold text-[1.15rem] tracking-[-0.03em] text-white
-                                 group-hover:text-emerald-400 transition-colors duration-200">
-                  TalentAI
-                </span>
-                <span className="text-[0.65rem] font-bold uppercase tracking-[0.14em] px-1.5 py-[3px] rounded-md"
-                      style={{ color: '#6ee7b7', background: 'rgba(16,185,129,0.12)', border: '1px solid rgba(16,185,129,0.25)' }}>
-                  Hire
-                </span>
-              </div>
+                  className="flex-shrink-0 transition-transform duration-300 hover:scale-105 w-fit">
+              <Image src="/logo-v.png" alt="HuntingTalent.ai" width={160} height={160}
+                     className="w-28 h-auto" />
             </Link>
 
             <p className="text-[1rem] font-semibold leading-snug tracking-[-0.01em]"
@@ -77,7 +60,7 @@ export function Footer({ dict }: FooterProps) {
                       className="inline-flex items-center gap-1.5 px-2.5 py-[5px] rounded-md text-[0.73rem]"
                       style={{ color: 'rgba(255,255,255,0.45)', background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.07)' }}>
                   <span className="w-[5px] h-[5px] rounded-full flex-shrink-0"
-                        style={{ background: '#10b981' }} />
+                        style={{ background: '#8B7FF0' }} />
                   {chip}
                 </span>
               ))}
@@ -101,9 +84,9 @@ export function Footer({ dict }: FooterProps) {
             {/* Badges */}
             <div className="flex flex-wrap gap-2">
               <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-[0.72rem] font-semibold"
-                    style={{ color: '#6ee7b7', background: 'rgba(16,185,129,0.10)', border: '1px solid rgba(16,185,129,0.22)' }}>
+                    style={{ color: '#C4B5FD', background: 'rgba(139,127,240,0.10)', border: '1px solid rgba(139,127,240,0.22)' }}>
                 <span className="w-1.5 h-1.5 rounded-full animate-pulse"
-                      style={{ background: '#6ee7b7', boxShadow: '0 0 6px rgba(110,231,183,0.7)' }} />
+                      style={{ background: '#C4B5FD', boxShadow: '0 0 6px rgba(196,181,253,0.7)' }} />
                 {dict.complianceBadge}
               </span>
               <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-[0.72rem] font-medium"
@@ -115,33 +98,12 @@ export function Footer({ dict }: FooterProps) {
                 Hedera Foundation
               </span>
             </div>
-
-            {/* LinkedIn */}
-            <a href={linkedinUrl} target="_blank" rel="noopener noreferrer"
-               className="inline-flex items-center gap-2.5 px-3.5 py-2 rounded-[9px] w-fit
-                          transition-all duration-200 group/li"
-               style={{ background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.08)' }}
-               onMouseOver={e => { const el = e.currentTarget as HTMLElement; el.style.background = 'rgba(16,185,129,0.08)'; el.style.borderColor = 'rgba(16,185,129,0.28)' }}
-               onMouseOut={e  => { const el = e.currentTarget as HTMLElement; el.style.background = 'rgba(255,255,255,0.04)'; el.style.borderColor = 'rgba(255,255,255,0.08)' }}>
-              <svg className="w-[14px] h-[14px] flex-shrink-0" style={{ color: 'rgba(255,255,255,0.40)' }}
-                   viewBox="0 0 24 24" fill="currentColor">
-                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-              </svg>
-              <span className="text-[0.79rem]" style={{ color: 'rgba(255,255,255,0.40)' }}>
-                {linkedinLabel}
-              </span>
-              <svg className="w-3 h-3 ml-auto flex-shrink-0" style={{ color: 'rgba(255,255,255,0.18)' }}
-                   fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
-                <path strokeLinecap="round" strokeLinejoin="round"
-                      d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
-              </svg>
-            </a>
           </div>
 
           {/* ── Navigate ── */}
           <div>
             <p className="text-[0.68rem] font-bold uppercase tracking-[0.16em] mb-5"
-               style={{ color: 'rgba(16,185,129,0.50)' }}>
+               style={{ color: 'rgba(139,127,240,0.50)' }}>
               {dict.navTitle}
             </p>
             <ul className="space-y-2">
@@ -150,11 +112,11 @@ export function Footer({ dict }: FooterProps) {
                   <a href={l.href}
                      className="text-[0.875rem] transition-colors duration-200 flex items-center gap-2 group/lnk"
                      style={{ color: 'rgba(255,255,255,0.42)' }}
-                     onMouseOver={e => (e.currentTarget.style.color = '#6ee7b7')}
+                     onMouseOver={e => (e.currentTarget.style.color = '#C4B5FD')}
                      onMouseOut={e  => (e.currentTarget.style.color = 'rgba(255,255,255,0.42)')}>
                     <span className="w-1 h-1 rounded-full flex-shrink-0 transition-all duration-200
                                      group-hover/lnk:scale-150"
-                          style={{ background: 'rgba(16,185,129,0.40)' }} />
+                          style={{ background: 'rgba(139,127,240,0.40)' }} />
                     {l.label}
                   </a>
                 </li>
@@ -165,7 +127,7 @@ export function Footer({ dict }: FooterProps) {
           {/* ── Contact & legal ── */}
           <div>
             <p className="text-[0.68rem] font-bold uppercase tracking-[0.16em] mb-5"
-               style={{ color: 'rgba(16,185,129,0.50)' }}>
+               style={{ color: 'rgba(139,127,240,0.50)' }}>
               {dict.contactTitle}
             </p>
             <ul className="space-y-2">
@@ -176,8 +138,8 @@ export function Footer({ dict }: FooterProps) {
                 const isEmail = href.startsWith('mailto:')
                 const isLI    = href.includes('linkedin')
 
-                const baseColor  = isCta ? '#34d399' : isLegal ? 'rgba(255,255,255,0.28)' : 'rgba(255,255,255,0.42)'
-                const hoverColor = isCta ? '#6ee7b7' : isLegal ? 'rgba(196,181,253,0.75)' : '#6ee7b7'
+                const baseColor  = isCta ? '#A78BFA' : isLegal ? 'rgba(255,255,255,0.28)' : 'rgba(255,255,255,0.42)'
+                const hoverColor = isCta ? '#C4B5FD' : isLegal ? 'rgba(196,181,253,0.75)' : '#C4B5FD'
 
                 return (
                   <li key={l.href}>
@@ -195,7 +157,7 @@ export function Footer({ dict }: FooterProps) {
                       {isLegal && <svg className="w-3.5 h-3.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2"><path strokeLinecap="round" strokeLinejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>}
                       {!isCta && !isEmail && !isLI && !isLegal && (
                         <span className="w-1 h-1 rounded-full flex-shrink-0"
-                              style={{ background: 'rgba(16,185,129,0.40)' }} />
+                              style={{ background: 'rgba(139,127,240,0.40)' }} />
                       )}
 
                       {l.label}
