@@ -3,7 +3,7 @@
 import Link               from 'next/link'
 import { useTranslation } from 'react-i18next'
 import { contactEmail, contactEmailHref, linkedinUrl, linkedinLabel, registrucentrasUrl, calendlyUrl } from '@/config/site'
-import { LegalNav }       from '../_legal/LegalNav'
+import { LegalNav }       from '@/features/legal/components/LegalNav'
 
 type Locale = 'en' | 'fr'
 
