@@ -3,8 +3,8 @@
 
 User-agent: *
 Allow: /
-Disallow: /legal.html
-Disallow: /imprint.html
+Disallow: /legal
+Disallow: /imprint
 
 # Specific bots for LLM indexing (allow)
 User-agent: GPTBot
