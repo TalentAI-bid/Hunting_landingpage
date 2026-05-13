@@ -15,7 +15,7 @@ export const contactEmailHref = `mailto:${contactEmail}`
 // ── Social & booking ───────────────────────────────────
 export const linkedinUrl   = 'https://www.linkedin.com/company/talent-ai-labs'
 export const linkedinLabel = 'linkedin.com/company/talent-ai-labs'
-export const calendlyUrl   = 'https://calendly.com/talentai-labs/intake'
+export const calendlyUrl   = 'https://calendly.com/talent__ai/30min'
 
 // ── External authorities ───────────────────────────────
 export const registrucentrasUrl = 'https://www.registrucentras.lt/'
