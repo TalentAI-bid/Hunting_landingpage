@@ -1,4 +1,4 @@
-# robots.txt for Talent AI Hire landing
+# robots.txt for Talent AI Hunting landing
 # Updated 2026-05-11
 
 User-agent: *

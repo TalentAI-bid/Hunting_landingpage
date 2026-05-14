@@ -32,7 +32,7 @@ const content: Record<Locale, PageContent> = {
         heading: 'Legal entity',
         rows: [
           { label: 'Legal name',              value: 'Talent AI Labs UAB' },
-          { label: 'Commercial name',         value: 'Talent AI Hire' },
+          { label: 'Commercial name',         value: 'Talent AI Hunting' },
           { label: 'Legal form',              value: 'UAB (Lithuanian Uždaroji akcinė bendrovė — Private Limited Company)' },
           { label: 'Company code (registry)', value: '307572423' },
           { label: 'VAT identifier',          value: 'LT307572423' },
@@ -76,7 +76,7 @@ const content: Record<Locale, PageContent> = {
         heading: 'Entité légale',
         rows: [
           { label: 'Raison sociale',          value: 'Talent AI Labs UAB' },
-          { label: 'Nom commercial',          value: 'Talent AI Hire' },
+          { label: 'Nom commercial',          value: 'Talent AI Hunting' },
           { label: 'Forme juridique',         value: 'UAB (Uždaroji akcinė bendrovė), équivalent lituanien de la société à responsabilité limitée' },
           { label: 'Code société (registre)', value: '307572423' },
           { label: 'Numéro TVA',              value: 'LT307572423' },

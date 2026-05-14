@@ -19,7 +19,7 @@ const spaceGrotesk = Space_Grotesk({
 })
 
 export const metadata: Metadata = {
-  title:       'Talent AI Hire — AI-native recruitment agency | 5% success-fee, behavioral-tested, video-validated',
+  title:       'Talent AI Hunting — AI-native recruitment agency | 5% success-fee, behavioral-tested, video-validated',
   description: 'Hire tech talent without the bad-hire risk. Behavioral testing + structured scorecard funnel + live AI video validation. 5% success-fee on year-1 salary, no retainer. EU AI Act compliant. 1000+ candidates evaluated.',
   keywords:    ['AI recruitment agency', 'AI-native hiring', 'behavioral interview', 'AI video validation', 'scorecard recruitment', 'success-fee recruitment', 'EU AI Act compliant recruitment', 'no retainer agency', 'anti fake CV', 'tech hiring agency'],
   robots:      { index: true, follow: true, googleBot: { index: true, follow: true, 'max-snippet': -1, 'max-image-preview': 'large', 'max-video-preview': -1 } },
@@ -81,7 +81,7 @@ const jsonLd = {
       mainEntity: [
         {
           '@type': 'Question',
-          name: 'How is Talent AI Hire different from a traditional recruitment agency?',
+          name: 'How is Talent AI Hunting different from a traditional recruitment agency?',
           acceptedAnswer: { '@type': 'Answer', text: 'We charge 5% success-fee on year-1 salary, paid only after the candidate starts. No retainer. No setup fee. No exclusivity. Every candidate is screened by our live AI video validation that verifies identity and skills, preventing fake CVs and impersonation. Manual agencies typically charge 20-30% success-fee plus setup and hidden charges, totalling €18-25K on an €80K hire.' },
         },
         {

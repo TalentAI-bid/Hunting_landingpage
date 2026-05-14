@@ -30,7 +30,7 @@ const content: Record<Locale, PageContent> = {
       {
         heading: '1. Who we are',
         blocks: [
-          { type: 'p', text: 'Talent AI Labs UAB ("Talent AI Hire", "we", "us") is a private limited company incorporated in Lithuania under company code 307572423, registered office in Vilnius, Lithuania. We operate as an AI-native recruitment agency placing candidates across the EU, UK, US, Canada and remote-friendly Web3 ecosystems.' },
+          { type: 'p', text: 'Talent AI Labs UAB ("Talent AI Hunting", "we", "us") is a private limited company incorporated in Lithuania under company code 307572423, registered office in Vilnius, Lithuania. We operate as an AI-native recruitment agency placing candidates across the EU, UK, US, Canada and remote-friendly Web3 ecosystems.' },
           { type: 'p', text: 'The full legal information about our entity is available on our Imprint page.', linkLabel: 'Imprint page', linkHref: '/imprint' },
         ],
       },
@@ -138,7 +138,7 @@ const content: Record<Locale, PageContent> = {
       {
         heading: '1. Qui sommes-nous',
         blocks: [
-          { type: 'p', text: 'Talent AI Labs UAB (ci-après « Talent AI Hire », « nous ») est une société à responsabilité limitée de droit lituanien, immatriculée sous le code 307572423 et dont le siège se situe à Vilnius, en Lituanie. Notre activité est celle d\'une agence de recrutement nativement fondée sur l\'intelligence artificielle. Nous plaçons des candidats au sein de l\'Union européenne, du Royaume-Uni, des États-Unis, du Canada, ainsi que dans les écosystèmes Web3 fonctionnant à distance.' },
+          { type: 'p', text: 'Talent AI Labs UAB (ci-après « Talent AI Hunting », « nous ») est une société à responsabilité limitée de droit lituanien, immatriculée sous le code 307572423 et dont le siège se situe à Vilnius, en Lituanie. Notre activité est celle d\'une agence de recrutement nativement fondée sur l\'intelligence artificielle. Nous plaçons des candidats au sein de l\'Union européenne, du Royaume-Uni, des États-Unis, du Canada, ainsi que dans les écosystèmes Web3 fonctionnant à distance.' },
           { type: 'p', text: "L'ensemble des informations légales relatives à notre entité figure sur la page Mentions légales.", linkLabel: 'Mentions légales', linkHref: '/imprint' },
         ],
       },
